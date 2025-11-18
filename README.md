@@ -15,9 +15,21 @@ This tool measures and compares how many tokens different data formats consume w
 ## Installation
 
 1. Clone this repository
-2. Install dependencies:
+
+2. Install `uv` (if not already installed):
    ```bash
-   pip install openai
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+3. Create and activate a virtual environment:
+   ```bash
+   uv venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+4. Install dependencies:
+   ```bash
+   uv pip install openai
    ```
 
 ## Configuration
