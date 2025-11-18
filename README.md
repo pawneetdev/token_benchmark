@@ -57,15 +57,15 @@ The script will:
 
 ## Benchmark Results
 
-Based on test data (profile with skills, experience, and projects):
+Based on test data (Mars exploration robot profile with skills, experience, and projects):
 
 | Format | Input Tokens | Output Tokens | Total Tokens |
 |--------|--------------|---------------|--------------|
-| JSON   | 142          | 91            | **233**      |
-| TOON   | 80           | 98            | **178**      |
-| VSC    | 61           | 95            | **156**      |
+| JSON   | 158          | 116           | **274**      |
+| TOON   | 93           | 123           | **216**      |
+| VSC    | 77           | 80            | **157**      |
 
-**Winner**: VSC format uses **33% fewer tokens** than JSON.
+**Winner**: VSC format uses **43% fewer tokens** than JSON.
 
 ## Customization
 
