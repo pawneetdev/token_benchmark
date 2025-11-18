@@ -10,36 +10,36 @@ client = OpenAI(api_key="YOUR_API_KEY")
 # Test Data (Bigger Prompt)
 # -----------------------------------------
 json_data = {
-    "name": "Pawneet Singh",
-    "age": 32,
-    "role": "Staff Software Engineer",
-    "skills": ["Python", "System Design", "Distributed Systems", "AI"],
-    "experience_years": 9,
-    "location": "India",
+    "name": "Rover-7X",
+    "age": 3,
+    "role": "Mars Exploration Robot",
+    "skills": ["Terrain Navigation", "Sample Collection", "Atmospheric Analysis", "Autonomous Decision Making"],
+    "experience_years": 3,
+    "location": "Mars, Jezero Crater",
     "projects": [
         {
-            "project_name": "LuminSkin AI",
-            "description": "AI powered skincare routine generator.",
-            "tech": ["OpenAI", "Groq LPU", "NextJS"]
+            "project_name": "Ancient Water Discovery",
+            "description": "Located evidence of ancient water flows in crater formations.",
+            "tech": ["Spectroscopy", "Ground Penetrating Radar", "AI Vision"]
         }
     ]
 }
 
 toon_data = """
-name Pawneet Singh
-age 32
-role Staff Software Engineer
-skills Python, System Design, Distributed Systems, AI
-experience_years 9
-location India
+name Rover-7X
+age 3
+role Mars Exploration Robot
+skills Terrain Navigation, Sample Collection, Atmospheric Analysis, Autonomous Decision Making
+experience_years 3
+location Mars, Jezero Crater
 
 project:
-  project_name LuminSkin AI
-  description AI powered skincare routine generator.
-  tech OpenAI | Groq LPU | NextJS
+  project_name Ancient Water Discovery
+  description Located evidence of ancient water flows in crater formations.
+  tech Spectroscopy | Ground Penetrating Radar | AI Vision
 """
 
-vsc_data = "Pawneet Singh,32,Staff Software Engineer,Python|System Design|Distributed Systems|AI,9,India,LuminSkin AI,AI powered skincare routine generator.,OpenAI;Groq LPU;NextJS"
+vsc_data = "Rover-7X,3,Mars Exploration Robot,Terrain Navigation|Sample Collection|Atmospheric Analysis|Autonomous Decision Making,3,Mars Jezero Crater,Ancient Water Discovery,Located evidence of ancient water flows in crater formations.,Spectroscopy;Ground Penetrating Radar;AI Vision"
 
 # -----------------------------------------
 # Benchmark Function
