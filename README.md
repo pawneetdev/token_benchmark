@@ -67,6 +67,26 @@ Based on test data (Mars exploration robot profile with skills, experience, and 
 
 **Winner**: VSC format uses **43% fewer tokens** than JSON.
 
+### Understanding the Results
+
+When evaluating these benchmarks, it's crucial to compare not just token counts but also the **quality of outputs**:
+
+#### Why Compare Outputs?
+
+1. **Quality Validation**: Ensures all formats produce comparable quality responses - significant differences suggest the model may misinterpret certain formats
+2. **Fair Comparison**: Verifies this is an apples-to-apples comparison where token efficiency is the only variable
+3. **Information Preservation**: Confirms no format loses important data during encoding
+4. **Model Understanding**: Shows whether the model parses and comprehends each format equally well
+
+#### What to Look For:
+
+- **Completeness**: Does each output include all key facts (name, role, skills, projects)?
+- **Accuracy**: Are the details correct in each response?
+- **Consistency**: Are responses similar in structure and content?
+- **Quality**: Is one format noticeably better/worse at conveying information?
+
+**Key Insight**: If outputs are comparable in quality and completeness, VSC's 43% token savings represents a clear efficiency win. However, if any format produces lower quality output, the token savings may not justify the trade-off.
+
 ## Customization
 
 You can modify the test data in the script to benchmark your own use cases. The script uses `gpt-4o-mini` by default, but you can change the model on line 49.
